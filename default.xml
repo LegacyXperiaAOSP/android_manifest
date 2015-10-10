@@ -5,9 +5,15 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com" />
 
+  <remote  name="github"
+           revision="lx-6.0"
+           fetch=".." />
+
   <default revision="refs/tags/android-6.0.0_r1"
            remote="aosp"
            sync-j="4" />
+
+  <project path="manifest" name="LegacyXperiaAOSP/android_manifest" remote="github" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
