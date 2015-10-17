@@ -15,7 +15,7 @@
 
   <project path="manifest" name="LegacyXperiaAOSP/android_manifest" remote="github" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="LegacyXperiaAOSP/android_build" groups="pdk" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
