@@ -11,6 +11,7 @@
 
   <default revision="refs/tags/android-6.0.0_r1"
            remote="aosp"
+           sync-c="true"
            sync-j="4" />
 
   <project path="manifest" name="LegacyXperiaAOSP/android_manifest" remote="github" />
