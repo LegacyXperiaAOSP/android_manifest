@@ -5,6 +5,16 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com" />
 
+  <remote  name="cm"
+           fetch="https://github.com"
+           revision="cm-13.0"
+           review="review.cyanogenmod.org" />
+
+  <remote  name="msm7x30"
+           fetch="https://github.com"
+           revision="lx-6.0"
+           review="review.msm7x30.org" />
+
   <remote  name="github"
            revision="lx-6.0"
            fetch=".." />
@@ -14,7 +24,56 @@
            sync-c="true"
            sync-j="4" />
 
+  <!-- LegacyXperia projects -->
+  <project path="device/semc/msm7x30-common" name="LegacyXperia/android_device_semc_msm7x30-common" remote="msm7x30" />
+
+  <project path="device/semc/mogami-common" name="LegacyXperia/android_device_semc_mogami-common" remote="msm7x30" />
+  <project path="device/semc/anzu" name="LegacyXperia/android_device_semc_anzu" remote="msm7x30" />
+  <project path="device/semc/coconut" name="LegacyXperia/android_device_semc_coconut" remote="msm7x30" />
+  <project path="device/semc/haida" name="LegacyXperia/android_device_semc_haida" remote="msm7x30" />
+  <project path="device/semc/hallon" name="LegacyXperia/android_device_semc_hallon" remote="msm7x30" />
+  <project path="device/semc/iyokan" name="LegacyXperia/android_device_semc_iyokan" remote="msm7x30" />
+  <project path="device/semc/mango" name="LegacyXperia/android_device_semc_mango" remote="msm7x30" />
+  <project path="device/semc/satsuma" name="LegacyXperia/android_device_semc_satsuma" remote="msm7x30" />
+  <project path="device/semc/smultron" name="LegacyXperia/android_device_semc_smultron" remote="msm7x30" />
+  <project path="device/semc/urushi" name="LegacyXperia/android_device_semc_urushi" remote="msm7x30" />
+
+  <project path="device/semc/zeus-common" name="LegacyXperia/android_device_semc_zeus-common" remote="msm7x30" />
+  <project path="device/semc/phoenix" name="LegacyXperia/android_device_semc_phoenix" remote="msm7x30" />
+  <project path="device/semc/zeus" name="LegacyXperia/android_device_semc_zeus" remote="msm7x30" />
+
+  <project path="kernel/semc/msm7x30" name="LegacyXperia/android_kernel_semc_msm7x30" remote="msm7x30" revision="cm-13.0" />
+
+  <project path="vendor/semc" name="LegacyXperia/proprietary_vendor_semc" remote="msm7x30" />
+
+  <!-- msm7x30 projects -->
+  <project path="device/qcom/msm7x30-common" name="msm7x30/android_device_qcom_msm7x30-common" remote="msm7x30" revision="cm-13.0" />
+
+  <project path="hardware/qcom/audio-caf/msm7x30" name="msm7x30/android_hardware_qcom_audio" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+  <project path="hardware/qcom/display-caf/msm7x30" name="msm7x30/android_hardware_qcom_display" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+  <project path="hardware/qcom/media-caf/msm7x30" name="msm7x30/android_hardware_qcom_media" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+
+  <!-- CyanogenMod projects -->
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="cm" />
+  <project path="external/sony/boringssl-compat" name="CyanogenMod/android_external_sony_boringssl-compat" remote="cm" />
+  <project path="external/stlport" name="CyanogenMod/android_external_stlport" groups="pdk" remote="cm" />
+
+  <project path="hardware/sony/DASH" name="CyanogenMod/android_hardware_sony_DASH" remote="cm" />
+  <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" remote="cm" />
+  <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" remote="cm" />
+
+  <project path="vendor/qcom/opensource/display-frameworks" name="CyanogenMod/android_vendor_qcom_opensource_display-frameworks" remote="cm" />
+
+  <!-- LegacyXperiaAOSP projects -->
   <project path="manifest" name="LegacyXperiaAOSP/android_manifest" remote="github" />
+
+  <project path="external/yaffs2" name="LegacyXperiaAOSP/android_external_yaffs2" remote="github" />
+
+  <project path="vendor/lx" name="LegacyXperiaAOSP/android_vendor_lx" remote="github" />
+
+  <!-- AOSP projects-->
+  <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" groups="pdk,darwin,arm" revision="master" />
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" revision="master" />
 
   <project path="build" name="LegacyXperiaAOSP/android_build" groups="pdk" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
