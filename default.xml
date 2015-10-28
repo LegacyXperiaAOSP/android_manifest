@@ -79,7 +79,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" groups="pdk" />
+  <project path="art" name="LegacyXperiaAOSP/android_art" groups="pdk" remote="github" />
   <project path="bionic" name="LegacyXperiaAOSP/android_bionic" groups="pdk" remote="github" />
   <project path="bootable/recovery" name="LegacyXperiaAOSP/android_bootable_recovery" groups="pdk" remote="github" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
@@ -513,7 +513,7 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
+  <project path="system/netd" name="LegacyXperiaAOSP/android_system_netd" groups="pdk" remote="github" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
