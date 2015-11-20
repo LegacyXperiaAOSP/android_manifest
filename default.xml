@@ -57,6 +57,7 @@
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="cm" />
   <project path="external/sony/boringssl-compat" name="CyanogenMod/android_external_sony_boringssl-compat" remote="cm" />
   <project path="external/stlport" name="CyanogenMod/android_external_stlport" groups="pdk" remote="cm" />
+  <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="cm" />
 
   <project path="hardware/sony/DASH" name="CyanogenMod/android_hardware_sony_DASH" remote="cm" />
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" remote="cm" />
@@ -66,8 +67,6 @@
 
   <!-- LegacyXperiaAOSP projects -->
   <project path="manifest" name="LegacyXperiaAOSP/android_manifest" remote="github" />
-
-  <project path="external/yaffs2" name="LegacyXperiaAOSP/android_external_yaffs2" remote="github" />
 
   <project path="vendor/lx" name="LegacyXperiaAOSP/android_vendor_lx" remote="github" />
 
